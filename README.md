@@ -4,14 +4,14 @@
 このコードは、Twilio Programmable Voiceのリアルタイム文字起こしを体験できるサンプルコードです。
 TwilioのFunctions & Assetsで動作するものなので、Twilioアカウントがあれば手軽にデモを動作させることが可能です。  
 
-### 条件  
+## 条件  
 1. Twilioのアカウントを持っていること
 2. Twilio CLIが利用可能なこと
 3. Twilio CLIのServerlessプラグインが導入済みであること
 4. SyncのDocumentの設定が完了していること
 5. Twilio上で利用可能な電話番号があること
 
-### 手順概要  
+## 導入手順  
 1. .envファイルへ必要な変数の登録    
    - Account SID  
      - Twilioコンソール内にあります。ACの頭文字で始まる文字列です。  
@@ -65,17 +65,11 @@ TwilioのFunctions & Assetsで動作するものなので、Twilioアカウン�
 </Response>
 ```
 
+4. 購入した電話番号に３で作成したTwiml Binを設定してください。
 
-1.  
 
-##  ローカル環境での実行
-1. ローカル実行  
-`npm start`  
-  
-## 本番環境へのデプロイ
-1. プロファイルの確認  
-`twilio profiles:list`  
-2. プロファイルの切り替え  
-`twilio profiles:use jp-proj`  
-3. デプロイ  
-`twilio serverless:deploy`  
+## デモ実施手順  
+1. ブラウザでFunctions & AssetsにデプロイしたIndex.htmlに対してアクセスしてください。
+2. 購入した電話番号に自分の電話から架電してください
+3. 機械音声が流れたあとに自由にお話下さい
+4. 喋っている内容がリアルタイムでブラウザ上に表示されます  
