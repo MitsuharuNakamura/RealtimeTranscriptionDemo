@@ -1,0 +1,39 @@
+body {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  .message-container {
+    height: 600px;
+    overflow-y: scroll;
+    border: 1px solid #ccc;
+    padding: 10px;
+  }
+  .message {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+  }
+  .message.inbound {
+    align-items: flex-start;
+  }
+  .message.outbound {
+    align-items: flex-end;
+  }
+  .message .content {
+    max-width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    word-wrap: break-word;
+    white-space: pre-wrap;
+    word-break: break-word;
+  }
+  .message.inbound .content {
+    background-color: #d1e7dd;
+  }
+  .message.outbound .content {
+    background-color: #f8d7da;
+  }
+  .message .label {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
